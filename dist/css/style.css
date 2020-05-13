@@ -601,6 +601,12 @@ video {
   width: 100%;
 }
 
+@media (min-width: 1279px){
+  .container{
+    max-width: 1279px;
+  }
+}
+
 body, h1, h2, h3, h4, h5, p, a {
   text-transform: capitalize
 }
@@ -60295,7 +60301,7 @@ a:hover {
   }
 }
 
-@media (max-width: 1279px){
+@media (min-width: 1279px){
   .xl\:sr-only{
     position: absolute;
     width: 1px;

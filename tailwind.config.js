@@ -7,7 +7,7 @@ module.exports = {
 
       'lg': {'max': '1023px'},
 
-      'xl': {'max': '1279px'},
+      'xl': {'min': '1279px'},
     },
     fontFamily: {
       'sans': ['Ubuntu', 'Sans-serif']
