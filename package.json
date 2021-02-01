@@ -6,7 +6,9 @@
   "main": "gulpfile.js",
   "scripts": {
     "dev": "gulp",
-    "build": "gulp build"
+    "build": "gulp build",
+    "git":"git add . && git commit -m",
+    "postgit": "git push -u origin main"
   },
   "options": {
     "config": {
