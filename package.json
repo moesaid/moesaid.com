@@ -8,7 +8,7 @@
     "dev": "gulp",
     "build": "gulp build",
     "git":"git add . && git commit -m",
-    "postgit": "git push -u origin main"
+    "postgit": "git push -u origin master"
   },
   "options": {
     "config": {
