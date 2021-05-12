@@ -63,6 +63,6 @@
     "tailwindcss-animatecss": "^0.2.7"
   },
   "dependencies": {
-    "chart.js": "^2.9.3"
+    "chart.js": "^2.9.4"
   }
 }
