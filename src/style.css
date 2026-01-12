@@ -1,0 +1,186 @@
+/* Google Fonts - Inter for modern, clean typography */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+    --font-family-sans: 'Inter', system-ui, sans-serif;
+
+    /* Custom color palette - warm minimalistic tones */
+    --color-surface: #fafafa;
+    --color-surface-elevated: #ffffff;
+    --color-text-primary: #1a1a1a;
+    --color-text-secondary: #6b6b6b;
+    --color-accent: #2563eb;
+    --color-accent-hover: #1d4ed8;
+    --color-border: rgba(0, 0, 0, 0.06);
+    --color-border-hover: rgba(0, 0, 0, 0.12);
+}
+
+/* Base styles */
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: var(--font-family-sans);
+        color: var(--color-text-primary);
+        background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 50%, #fafafa 100%);
+        min-height: 100vh;
+        line-height: 1.7;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    ::selection {
+        background-color: var(--color-accent);
+        color: white;
+    }
+}
+
+/* Typography */
+@layer base {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: 600;
+        letter-spacing: -0.02em;
+    }
+
+    a {
+        color: var(--color-accent);
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.2s ease;
+        position: relative;
+    }
+
+    a:hover {
+        color: var(--color-accent-hover);
+    }
+
+    /* Subtle underline animation for inline links */
+    .link-underline {
+        background-image: linear-gradient(var(--color-accent), var(--color-accent));
+        background-size: 0% 1.5px;
+        background-position: 0 100%;
+        background-repeat: no-repeat;
+        transition: background-size 0.3s ease;
+    }
+
+    .link-underline:hover {
+        background-size: 100% 1.5px;
+    }
+}
+
+/* Card component - glassmorphism style */
+@layer components {
+    .card {
+        background: var(--color-surface-elevated);
+        border: 1px solid var(--color-border);
+        border-radius: 12px;
+        padding: 1rem 1.5rem;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+        width: 100%;
+    }
+
+    @media (min-width: 640px) {
+        .card {
+            width: calc(50% - 0.5rem);
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .card {
+            width: calc(33.333% - 0.667rem);
+        }
+    }
+
+    .card:hover {
+        border-color: var(--color-border-hover);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        transform: translateY(-2px);
+    }
+
+    .card:active {
+        transform: translateY(0);
+    }
+}
+
+/* Section titles */
+@layer components {
+    .section-title {
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--color-text-secondary);
+    }
+}
+
+/* Fade in animation */
+@layer utilities {
+    @keyframes fade-in-up {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .animate-fade-in {
+        animation: fade-in-up 0.6s ease-out forwards;
+    }
+
+    .animate-delay-100 {
+        animation-delay: 0.1s;
+    }
+
+    .animate-delay-200 {
+        animation-delay: 0.2s;
+    }
+
+    .animate-delay-300 {
+        animation-delay: 0.3s;
+    }
+
+    .animate-delay-400 {
+        animation-delay: 0.4s;
+    }
+
+    /* Screen reader only - visually hidden but accessible */
+    .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border-width: 0;
+    }
+}
+
+/* Responsive container */
+@layer components {
+    .container-narrow {
+        width: 100%;
+        max-width: 680px;
+        margin: 0 auto;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
