@@ -32,6 +32,12 @@ export default function Home() {
             logo: '/sleep-key.png',
             alt: 'Sleep Key - Sleep Tracker, Sound',
         },
+        {
+            name: 'Young Muslim Club',
+            href: 'https://youngmuslimclub.com/',
+            logo: '/ymc.svg',
+            alt: 'Young Muslim Club',
+        },
     ];
 
     return (
