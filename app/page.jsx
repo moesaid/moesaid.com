@@ -1,4 +1,5 @@
 import { cn } from '@/lib/utils';
+import Image from 'next/image';
 
 export default function Home() {
     const projects = [
@@ -33,7 +34,7 @@ export default function Home() {
             alt: 'Sleep Key - Sleep Tracker, Sound',
         },
         {
-            name: 'Young Muslim Club',
+            name: 'YMC',
             href: 'https://youngmuslimclub.com/',
             logo: '/ymc.svg',
             alt: 'Young Muslim Club',
@@ -128,13 +129,13 @@ export default function Home() {
                                     'w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.667rem)]'
                                 )}
                             >
-                                <img
+                                <Image
                                     src={project.logo}
                                     alt={project.alt}
                                     className="w-8 h-6 object-contain"
-                                    loading="lazy"
-                                    width="32"
-                                    height="24"
+                                    width={32}
+                                    height={24}
+
                                 />
                                 <span className="font-medium text-black">{project.name}</span>
                             </a>

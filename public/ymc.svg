@@ -11,5 +11,5 @@
     </linearGradient>
   </defs>
   <rect width="120" height="120" rx="26" ry="26" fill="url(#bg)"/>
-  <path d="M72 28 C52 28, 36 46, 36 68 C36 90, 52 106, 72 106 C58 98, 50 84, 50 68 C50 52, 58 38, 72 28Z" fill="url(#moon)"/>
+  <path d="M48 24C68 24, 84 42, 84 60C84 78, 68 96, 48 96C62 88, 70 76, 70 60C70 44, 62 32, 48 24Z" fill="url(#moon)"/>
 </svg>
