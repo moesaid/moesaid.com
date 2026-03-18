@@ -27,10 +27,10 @@ export default function Home() {
             alt: 'SphinxVerify is a Flutter package that aims to provide an interface to amazon recognition service, with built-in use cases.',
         },
         {
-            name: 'Nyxa',
-            href: 'https://apps.apple.com/us/app/nyxa-sleep-tracker-sound/id6756638306',
-            logo: '/nyxa.png',
-            alt: 'Nyxa - Sleep Tracker, Sound',
+            name: 'Sleep Key',
+            href: 'https://apps.apple.com/us/app/sleep-key-tracker-sound/id6756638306',
+            logo: '/sleep-key.png',
+            alt: 'Sleep Key - Sleep Tracker, Sound',
         },
     ];
 
