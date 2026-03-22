@@ -6,8 +6,8 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata = {
     metadataBase: new URL('https://moesaid.com'),
     title: 'Mohamed S Abdrabou — Full Stack Developer in Cleveland',
-    description: 'Full Stack Web Developer based in Cleveland, Ohio. Specializing in modern web development, UI/UX design, and open source contributions. Creator of Qena App, InstaBreed, and Cleopatra.',
-    keywords: ['Mohamed Abdrabou', 'Full Stack Developer', 'Cleveland Developer', 'Web Developer', 'UI Designer', 'React Developer', 'Open Source', 'Qena App', 'Cleopatra'],
+    description: 'Full Stack Developer based in Cleveland, Ohio. Specializing in modern development, UI/UX design, and open source contributions.',
+    keywords: ['Mohamed Abdrabou', 'Full Stack Developer', 'Cleveland Developer', 'UI Designer', 'React Developer', 'Open Source', 'Qena App', 'Cleopatra'],
     authors: [{ name: 'Mohamed S Abdrabou' }],
     creator: 'Mohamed S Abdrabou',
     publisher: 'Mohamed S Abdrabou',
@@ -21,7 +21,7 @@ export const metadata = {
         url: 'https://moesaid.com/',
         siteName: 'Mohamed S Abdrabou Portfolio',
         title: 'Mohamed S Abdrabou — Full Stack Developer in Cleveland',
-        description: 'Full Stack Web Developer based in Cleveland, Ohio. Specializing in modern web development, UI/UX design, and open source contributions.',
+        description: 'Full Stack Developer based in Cleveland, Ohio. Specializing in modern development, UI/UX design, and open source contributions.',
         images: [
             {
                 url: '/fav.png',
@@ -34,7 +34,7 @@ export const metadata = {
         site: '@MohamedSaid__',
         creator: '@MohamedSaid__',
         title: 'Mohamed S Abdrabou — Full Stack Developer',
-        description: 'Full Stack Web Developer based in Cleveland, Ohio.',
+        description: 'Full Stack Developer based in Cleveland, Ohio.',
         images: ['/fav.png'],
     },
     icons: {

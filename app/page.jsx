@@ -1,45 +1,9 @@
 import { cn } from '@/lib/utils';
-import Image from 'next/image';
+import { projects } from '@/lib/projects';
+import LazyImage from '@/components/lazy-image';
+import Link from 'next/link';
 
 export default function Home() {
-    const projects = [
-        {
-            name: 'RaThemes',
-            href: 'https://themeforest.net/user/ra-themes/portfolio',
-            logo: '/rathemes.png',
-            alt: 'RA Themes logo',
-        },
-        {
-            name: 'Cleopatra',
-            href: 'https://github.com/moesaid/cleopatra',
-            logo: '/cleopatra.png',
-            alt: 'Admin Dashboard Template Built On Tailwind CSS',
-        },
-        {
-            name: 'FlutterPP',
-            href: 'https://github.com/moesaid/flutterpp',
-            logo: '/flutterpp.png',
-            alt: 'FlutterPP is designed to be your ultimate developer companion, automating code generation and significantly reducing development time.',
-        },
-        {
-            name: 'SphinxVerify',
-            href: 'https://github.com/moesaid/sphinxverify',
-            logo: '/sphinxverify.png',
-            alt: 'SphinxVerify is a Flutter package that aims to provide an interface to amazon recognition service, with built-in use cases.',
-        },
-        {
-            name: 'Sleep Key',
-            href: 'https://apps.apple.com/us/app/sleep-key-tracker-sound/id6756638306',
-            logo: '/sleep-key.png',
-            alt: 'Sleep Key - Sleep Tracker, Sound',
-        },
-        {
-            name: 'YMC',
-            href: 'https://youngmuslimclub.com/',
-            logo: '/ymc.svg',
-            alt: 'Young Muslim Club',
-        },
-    ];
 
     return (
         <main className="min-h-screen flex items-center justify-center py-16 px-6">
@@ -115,30 +79,26 @@ export default function Home() {
 
                     <div className="flex flex-wrap justify-center gap-4">
                         {projects.map((project, index) => (
-                            <a
+                            <Link
                                 key={project.name}
-                                href={project.href}
-                                target="_blank"
-                                rel="noopener noreferrer"
+                                href={`/projects/${project.slug}`}
                                 className={cn(
                                     'bg-white border border-border rounded-xl px-6 py-4',
                                     'flex items-center gap-3',
                                     'transition-all duration-250 ease-out',
-                                    'hover:border-border/50 hover:shadow-lg hover:-translate-y-0.5',
-                                    'active:translate-y-0',
+                                    'hover:border-black hover:shadow-lg hover:shadow-black/10 ',
                                     'w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.667rem)]'
                                 )}
                             >
-                                <Image
+                                <LazyImage
                                     src={project.logo}
                                     alt={project.alt}
-                                    className="w-8 h-6 object-contain"
+                                    className="w-8 h-6"
                                     width={32}
                                     height={24}
-
                                 />
                                 <span className="font-medium text-black">{project.name}</span>
-                            </a>
+                            </Link>
                         ))}
                     </div>
                 </section>
