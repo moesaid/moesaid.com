@@ -5,9 +5,12 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
     metadataBase: new URL('https://moesaid.com'),
-    title: 'Mohamed S Abdrabou — Full Stack Developer in Cleveland',
-    description: 'Full Stack Developer based in Cleveland, Ohio. Specializing in modern development, UI/UX design, and open source contributions.',
-    keywords: ['Mohamed Abdrabou', 'Full Stack Developer', 'Cleveland Developer', 'UI Designer', 'React Developer', 'Open Source', 'Qena App', 'Cleopatra'],
+    title: {
+        default: 'Mohamed S Abdrabou, designer and developer in Cleveland',
+        template: '%s | Mohamed S Abdrabou',
+    },
+    description: 'I’m Mohamed, a designer and developer in Cleveland, Ohio. I make Duha for masjids, Sleep Key, HoopsGo, and a few open source tools like Cleopatra and FlutterPP.',
+    keywords: ['Mohamed Abdrabou', 'Mohamed Said', 'Full Stack Developer', 'Cleveland Developer', 'UI Designer', 'Flutter Developer', 'React Developer', 'Open Source', 'Duha', 'Masjid Management Software', 'Sleep Key', 'HoopsGo', 'Cleopatra', 'FlutterPP'],
     authors: [{ name: 'Mohamed S Abdrabou' }],
     creator: 'Mohamed S Abdrabou',
     publisher: 'Mohamed S Abdrabou',
@@ -18,31 +21,21 @@ export const metadata = {
     openGraph: {
         type: 'website',
         locale: 'en_US',
-        url: 'https://moesaid.com/',
-        siteName: 'Mohamed S Abdrabou Portfolio',
-        title: 'Mohamed S Abdrabou — Full Stack Developer in Cleveland',
-        description: 'Full Stack Developer based in Cleveland, Ohio. Specializing in modern development, UI/UX design, and open source contributions.',
-        images: [
-            {
-                url: '/fav.png',
-                alt: 'Mohamed S Abdrabou - Full Stack Developer',
-            },
-        ],
+        url: '/',
+        siteName: 'Mohamed S Abdrabou',
+        title: 'Mohamed S Abdrabou, designer and developer in Cleveland',
+        description: 'I’m Mohamed, a designer and developer in Cleveland, Ohio. I make Duha for masjids, Sleep Key, HoopsGo, and a few open source tools.',
     },
     twitter: {
         card: 'summary_large_image',
         site: '@MohamedSaid__',
         creator: '@MohamedSaid__',
-        title: 'Mohamed S Abdrabou — Full Stack Developer',
-        description: 'Full Stack Developer based in Cleveland, Ohio.',
-        images: ['/fav.png'],
+        title: 'Mohamed S Abdrabou, designer and developer in Cleveland',
+        description: 'I’m Mohamed, a designer and developer in Cleveland, Ohio. I make Duha for masjids, Sleep Key, and HoopsGo.',
     },
     icons: {
         icon: '/fav.png',
         apple: '/fav.png',
-    },
-    alternates: {
-        canonical: 'https://moesaid.com/',
     },
 };
 

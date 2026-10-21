@@ -25,8 +25,10 @@ export async function generateMetadata({ params }) {
     if (!project || !legalData) return {};
 
     return {
-        title: `${legalData.title} — ${project.name}`,
+        title: `${project.name} ${legalData.title}`,
         description: `${legalData.title} for ${project.name}`,
+        alternates: { canonical: `/projects/${project.slug}/${legal}` },
+        openGraph: { title: `${project.name} ${legalData.title}`, url: `/projects/${project.slug}/${legal}` },
     };
 }
 
@@ -48,7 +50,7 @@ export default async function LegalPage({ params }) {
                         href={`/projects/${project.slug}`}
                         className="text-sm text-gray-400 hover:text-black transition-colors"
                     >
-                        ← {project.name}
+                        Back to {project.name}
                     </Link>
                 </div>
 
