@@ -9,7 +9,7 @@ export const metadata = {
         default: 'Mohamed S Abdrabou, designer and developer in Cleveland',
         template: '%s | Mohamed S Abdrabou',
     },
-    description: 'I’m Mohamed, a designer and developer in Cleveland, Ohio. I make Duha for masjids, Sleep Key, HoopsGo, and a few open source tools like Cleopatra and FlutterPP.',
+    description: 'I’m Mohamed, a designer and developer in Cleveland, Ohio. I make Duha for masjids, Sleep Key, HoopsGo, Young Muslim Club, and a few open source tools like Cleopatra and FlutterPP.',
     keywords: ['Mohamed Abdrabou', 'Mohamed Said', 'Full Stack Developer', 'Cleveland Developer', 'UI Designer', 'Flutter Developer', 'React Developer', 'Open Source', 'Duha', 'Masjid Management Software', 'Sleep Key', 'HoopsGo', 'Cleopatra', 'FlutterPP'],
     authors: [{ name: 'Mohamed S Abdrabou' }],
     creator: 'Mohamed S Abdrabou',

@@ -125,10 +125,12 @@ export default async function ProjectPage({ params }) {
 
     return (
         <main className="min-h-screen flex items-center justify-center py-16 px-6">
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(projectJsonLd(project)) }}
-            />
+            {project.category && (
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(projectJsonLd(project)) }}
+                />
+            )}
             <div className="container-narrow max-w-lg">
                 {/* Back */}
                 <nav className="animate-fade-in opacity-0 mb-10" aria-label="Breadcrumb">
